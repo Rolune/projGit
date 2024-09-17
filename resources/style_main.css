@@ -1,8 +1,13 @@
 /* base setting */
+:root {
+	--col-main: #c9c9c9;
+	--col-off: black;
+}
+
 * {
 	font-family: Arial;
 	text-align: center;
-	background-color: #c5c5c5;
+	background-color: var(--col-main);
 }
 
 h1, h2, p {
@@ -10,10 +15,11 @@ h1, h2, p {
 }
 
 h1, h2, p, a {
-	color: darkslategrey;
+	color: color-mix(in srgb, var(--col-main) 40%, var(--col-off));
 }
 
 h1 {
+	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 50px;
 }
@@ -24,6 +30,27 @@ h2 {
 }
 
 p {
-	color: gray;
+	color: color-mix(in srgb, var(--col-main) 56%, var(--col-off));
 	font-size: 21px;
+}
+
+footer {
+	padding-top: 20px;
+}
+
+/* class setting */
+.margin-bot-0 {
+	margin-bottom: 0;
+}
+.margin-top-0 {
+	margin-top: 0;
+}
+.links {
+	color: color-mix(in srgb, var(--col-main) 80%, var(--col-off));;
+}
+
+/* id setting */
+#author {
+	text-align: right;
+	font-size: 12px;
 }
