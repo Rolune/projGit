@@ -1,3 +1,26 @@
 h4 {
 	color: orange;
 }
+/* base setting */
+* {
+	font-family: Arial;
+	text-align: center;
+}
+
+h1, h2, p {
+	font-family: Verdana;
+}
+
+h1, h2, p, a {
+	color: white;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 50px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 42px;
+}
