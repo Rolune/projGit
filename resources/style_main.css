@@ -2,6 +2,7 @@
 :root {
 	--col-main: #c9c9c9;
 	--col-off: black;
+	--val-margin: 90px;
 }
 
 * {
@@ -44,6 +45,12 @@ footer {
 }
 .margin-top-0 {
 	margin-top: 0;
+}
+.margin-top-gap {
+	margin-top: var(--val-margin);
+}
+.margin-bot-gap {
+	margin-bottom: var(--val-margin);
 }
 .links {
 	color: color-mix(in srgb, var(--col-main) 80%, var(--col-off));;
