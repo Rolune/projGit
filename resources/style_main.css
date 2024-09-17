@@ -1,8 +1,10 @@
 /* base setting */
 :root {
-	--col-main: #c9c9c9;
+	--col-main: #c6c6c6;
 	--col-off: black;
-	--val-margin: 90px;
+	--col-warn: red;
+	--val-mar-m: 90px;
+	--val-mar-s: calc(var(--val-mar-m) / 4.5)
 }
 
 * {
@@ -40,20 +42,26 @@ footer {
 }
 
 /* class setting */
-.margin-bot-0 {
+.mar-bot-0 {
 	margin-bottom: 0;
 }
-.margin-top-0 {
+.mar-top-0 {
 	margin-top: 0;
 }
-.margin-top-gap {
-	margin-top: var(--val-margin);
+.mar-top-m {
+	margin-top: var(--val-mar-m);
 }
-.margin-bot-gap {
-	margin-bottom: var(--val-margin);
+.mar-bot-s {
+	margin-bottom: var(--val-mar-s);
+}
+.clamp-width {
+	max-width: 100%;
 }
 .links {
-	color: color-mix(in srgb, var(--col-main) 80%, var(--col-off));;
+	color: color-mix(in srgb, var(--col-main) 80%, var(--col-off));
+}
+.links:hover {
+	color: var(--col-warn);
 }
 
 /* id setting */
