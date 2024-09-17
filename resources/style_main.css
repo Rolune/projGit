@@ -2,6 +2,7 @@
 * {
 	font-family: Arial;
 	text-align: center;
+	background-color: #c5c5c5;
 }
 
 h1, h2, p {
@@ -9,7 +10,7 @@ h1, h2, p {
 }
 
 h1, h2, p, a {
-	color: white;
+	color: darkslategrey;
 }
 
 h1 {
@@ -20,4 +21,9 @@ h1 {
 h2 {
 	font-weight: 300;
 	font-size: 42px;
+}
+
+p {
+	color: gray;
+	font-size: 21px;
 }
