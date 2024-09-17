@@ -55,7 +55,7 @@ footer {
 	margin-bottom: var(--val-mar-s);
 }
 .clamp-width {
-	max-width: 100%;
+	max-width: 80%;
 }
 .links {
 	color: color-mix(in srgb, var(--col-main) 80%, var(--col-off));
