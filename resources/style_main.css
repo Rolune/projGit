@@ -1,3 +1,71 @@
-h4 {
-	color: orange;
+/* base setting */
+:root {
+	--col-main: #c6c6c6;
+	--col-off: black;
+	--col-warn: red;
+	--val-mar-m: 90px;
+	--val-mar-s: calc(var(--val-mar-m) / 4.5)
+}
+
+* {
+	font-family: Arial;
+	text-align: center;
+	background-color: var(--col-main);
+}
+
+h1, h2, p {
+	font-family: Verdana;
+}
+
+h1, h2, p, a {
+	color: color-mix(in srgb, var(--col-main) 40%, var(--col-off));
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 50px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 42px;
+}
+
+p {
+	color: color-mix(in srgb, var(--col-main) 56%, var(--col-off));
+	font-size: 21px;
+}
+
+footer {
+	padding-top: 20px;
+}
+
+/* class setting */
+.mar-bot-0 {
+	margin-bottom: 0;
+}
+.mar-top-0 {
+	margin-top: 0;
+}
+.mar-top-m {
+	margin-top: var(--val-mar-m);
+}
+.mar-bot-s {
+	margin-bottom: var(--val-mar-s);
+}
+.clamp-width {
+	max-width: 80%;
+}
+.links {
+	color: color-mix(in srgb, var(--col-main) 80%, var(--col-off));
+}
+.links:hover {
+	color: var(--col-warn);
+}
+
+/* id setting */
+#author {
+	text-align: right;
+	font-size: 12px;
 }
